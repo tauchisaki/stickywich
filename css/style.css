@@ -1,0 +1,475 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root{
+  --main-color:#e6baed;
+  --bg-color:#f9e9d2;
+  --accent-color:#fe72cb;
+  --p-color:#000000;
+}
+body{
+  font-family: 'M PLUS 1p', sans-serif;
+  background-color: var(--main-color);
+  color: var(--p-color);
+  min-width: 1160px;
+}
+
+/* header */
+.home header{
+  background: linear-gradient(45deg, #e6baed 0%, #e6baed 50%, #f99bc0 50%, #f99bc0 100%);
+  width: 100%;
+}
+.home header .inner{
+  min-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.home header .inner nav{
+	position: fixed;
+  width: 100%;
+  text-align: center;
+  transition: .3s;
+  z-index: 3;
+  margin-top: 0;
+}
+.is-animation nav{
+  padding: 1em 0;
+	font-size: 16px;
+  background-color: rgba(254,114,203,0.9);
+}
+.is-animation li img{
+  height: 70px;
+}
+.is-animation .headicon{
+  display: none;
+}
+header .inner i{
+  color: #fff;
+  font-size: 30px;
+  margin-right: 20px;
+}
+header .inner .headicon{
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 10px;
+}
+header .inner .gourmet{
+  float: left;
+}
+header .inner .sns{
+  float: right;
+}
+header .inner .sns i.fa-instagram{
+  margin-right: 0;
+}
+header .inner nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: flex-end;
+}
+header .inner nav li{
+  margin: 0 20px 20px 20px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+header .inner nav li a{
+  color: #fff;
+  text-decoration: none;
+}
+header .inner .first-content{
+  width: 960px;
+  margin: 175px auto 20px auto;
+}
+/* main */
+.home main{
+  overflow: hidden;
+}
+.home main .second-content{
+  background-image: url("../images/bg-pattan.jpg");
+  background-repeat: repeat;
+  position: relative;
+  height: 600px;
+}
+.home main article{
+  width: 800px;
+  height: 340px;
+  border:4px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0px auto;
+  position: relative;
+  top: 100px;
+}
+.home main article h2{
+  position: absolute;
+  text-align: center;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.home main article p{
+  width: 400px;
+  margin: 50px auto 0 auto;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+.home main article a.more{
+  display: block;
+  background-color: var(--p-color);
+  width: 200px;
+  height: 55px;
+  border-radius: 27.5px;
+  text-align: center;
+  line-height: 55px;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.home main .second-content img.sand-img02{
+  position: absolute;
+  top: 10px;
+  left: -300px;
+}
+.home main .second-content img.sand-img03{
+  position: absolute;
+  right: -30px;
+}
+.home main .third-content{
+  background-color: var(--bg-color);
+  background-image: url("../images/bg-parts01.png"),url("../images/bg-parts02.png");
+  background-repeat: no-repeat,no-repeat;
+  background-position: left top,right bottom;
+  height: 600px;
+}
+.home main .third-content dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.home main .third-content dl dt {
+  width: 20%;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.home main .third-content dl dd {
+  width: 80%;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+/* footer */
+footer .inner{
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+footer .inner img.sand-img01{
+  position: absolute;
+  top: -123px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+footer .inner img.share{
+  margin-top: 138px;
+  margin-bottom: 20px;
+}
+footer .inner ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .inner li{
+  font-size: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+footer .inner li a{
+  color: var(--p-color);
+  text-decoration: none;
+}
+footer .inner p{
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* アバウト */
+
+/* メニュー */
+header.non-index{
+  background-color: var(--main-color);
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  transition: .3s;
+  z-index: 99999;
+  margin-top: 0;
+}
+header.non-index i{
+  font-size: 20px;
+}
+header.non-index li img{
+  height: 70px;
+}
+.menu main{
+  background-image: url("../images/bg-pattan.jpg");
+  padding-top: 200px;
+}
+.menu main article{
+  width: 100%;
+  background-image: url("../images/bg-pattan2.jpg");
+  position: relative;
+  padding-top: 80px;
+}
+.menu main section{
+  width: 960px;
+  background-image: url("../images/bg-pattan2.jpg");
+  margin: 120px auto;
+  position: relative;
+  padding-top: 80px;
+}
+.menu main .select{
+  text-align: center;
+  padding-bottom: 200px;
+  position: relative;
+}
+.menu main h2{
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  font-size: 100px;
+}
+.menu main h3{
+  color: #fff;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 100px;
+  text-shadow: 1px 1px 2px var(--accent-color), 0 0 0.2em var(--accent-color);
+}
+.menu main .midasi{
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.menu main p.en{
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+.menu main p.small{
+  font-size: 12px;
+  text-align: center;
+}
+.menu main p.subtext{
+  font-size: 12px;
+  background-color: #ecb968;
+  display: inline;
+}
+/* メニュー　ソースメニュー */
+.menu main table{
+  width: 800px;
+  margin: 0 auto;
+}
+.menu main table tr{
+  height: 100px;
+}
+.menu main table td.item1{
+  width: 263px;
+}
+.menu main table td.item2{
+  width: 385px;
+}
+.menu main table td.item3{
+  width: 152px;
+}
+/* メニュー　サンドウィッチメニュー　カルーセル部分 */
+.menu main .bx-wrapper {
+ box-shadow: none;
+ border: none;
+ background-color: transparent;
+}
+.menu main .bxinner{
+  width: 960px;
+  margin: 0 auto;
+}
+.menu main .menu-cal{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.menu main .menu-cal img{
+  margin: 10px auto;
+}
+.menu main .menu-cal p.en{
+  text-align: center;
+}
+.menu main .menu-cal .box{
+  text-align: center;
+  width: 300px;
+}
+.menu main .bx-wrapper .bx-prev{
+  left: -50px;
+}
+.menu main .bx-wrapper .bx-next{
+  right: -50px;
+}
+/* メニュー　サンドウィッチメニュー　金額部分 */
+.menu main ul{
+  list-style: none;
+  text-align: left;
+  font-size: 0;
+}
+.menu main li{
+  display: inline-block;
+  border-right: 2px dotted var(--p-color);
+  width: 100px;
+  margin: 20px 0;
+}
+.menu main li span{
+  display: block;
+  background-color: var(--p-color);
+  border-radius: 15px;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 0 auto 10px auto;
+}
+.menu main li p{
+  font-size: 20px;
+  text-align: center;
+}
+/* メニュー　トッピングメニュー */
+.menu main .box figcaption{
+  text-align: justify;
+  line-height: 1.4;
+  height: 70px;
+}
+.menu main li:last-child{
+  border: none;
+}
+.menu main .tpbox{
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.menu main .tpbox figure{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.menu main .tpbox figcaption{
+  display: block;
+  background-color: var(--p-color);
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+/* メニュー　セレクト部分 */
+.menu main .select{
+  width: 1012px;
+  margin: 0 auto;
+}
+.menu main .instabox{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+/* アクセス */
+.access main{
+  background-image: url("../images/bg-pattan.jpg");
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.access main .inner{
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.access main h2{
+  color: #fff;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 100px;
+  text-shadow: 1px 1px 2px var(--accent-color), 0 0 0.2em var(--accent-color);
+}
+.access main p.small{
+  font-size: 12px;
+  text-align: center;
+}
+.access main .midasi{
+  margin-bottom: 40px;
+}
+.access main section{
+  width: 800px;
+  height: 400px;
+  background-color: #fff;
+  border: 5px solid var(--p-color);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.access main h3{
+  margin: 30px 0;
+  font-size: 25px;
+}
+.access main .storebox{
+  width: 340px;
+  float: left;
+  margin-left: 35px;
+}
+.access main .storebox tr.infobox{
+  height: 80px;
+  vertical-align: middle;
+  border-bottom: 1px solid #888;
+}
+.access main .storebox th{
+  width: 110px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.access main .storebox td{
+  text-align: justify;
+  vertical-align: middle;
+}
+.access main .storebox th.infobox2,td.infobox2{
+  vertical-align: top;
+  padding-top: 25px;
+  line-height: 1.5;
+}
+.access main p.root{
+  width: 800px;
+  margin: 0 auto 30px auto;
+}
+.access main iframe{
+  margin-bottom: 200px;
+  border-radius: 10px;
+}
+/* コンタクト */
